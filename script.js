@@ -1,4 +1,11 @@
+//Date = 2025-06-19
+//Shikha Shikha
+//Assignment 01
+//First of all, creating variables for selecting story words
+
 var selections = ["", "", "", "", ""];
+
+//Adding all the words for story that will be selected
 
 function selectWord(column, index) {
   var words = {
@@ -11,12 +18,12 @@ function selectWord(column, index) {
 
   selections[column - 1] = words[column][index];
 }
-
+// Using function for making the story
 function buildStory() {
   var complete = selections.every(function (word) {
     return word !== "";
   });
-
+// Adding an if else statement for the correct output
   if (complete) {
     var sentence = selections.join(" ");
     document.getElementById("story-output").textContent = sentence;
@@ -24,3 +31,5 @@ function buildStory() {
     document.getElementById("story-output").textContent = "Please select a word from each column.";
   }
 }
+
+
