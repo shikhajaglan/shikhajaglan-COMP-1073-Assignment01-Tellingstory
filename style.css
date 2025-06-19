@@ -53,7 +53,7 @@ button:hover {
 }
 /*adjusting the zoom action of animals image*/
 .animal {
-  width: 70px;   
+  width: 100px;   
   height: auto;
   animation: float 3s ease-in-out infinite;
 }
