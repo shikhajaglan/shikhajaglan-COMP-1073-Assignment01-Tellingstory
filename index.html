@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>See 'N' Say Storymaker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>See 'N' Say Storymaker</h1>
+<div class="animals-row">
+  <img src="images/Cat.jpg" alt="Cat" class="animal" />
+  <img src="images/monkey.jpg" alt="Monkey" class="animal" />
+  <img src="images/Elephant.jpg" alt="Elephant" class="animal" />
+  <img src="images/Frog.jpg" alt="Frog" class="animal" />
+  <img src="images/Goat.jpg" alt="Goat" class="animal" />
+  <img src="images/cow.jpg" alt="Cow" class="animal" />
+</div>
+
+
+
+  <div class="container">
+    <div class="column" id="col1">
+      <button onclick="selectWord(1, 0)">The turkey</button>
+      <button onclick="selectWord(1, 1)">Mom</button>
+      <button onclick="selectWord(1, 2)">Dad</button>
+      <button onclick="selectWord(1, 3)">The dog</button>
+      <button onclick="selectWord(1, 4)">My teacher</button>
+      <button onclick="selectWord(1, 5)">The elephant</button>
+      <button onclick="selectWord(1, 6)">The cat</button>
+    </div>
+    <div class="column" id="col2">
+      <button onclick="selectWord(2, 0)">sat on</button>
+      <button onclick="selectWord(2, 1)">danced with</button>
+      <button onclick="selectWord(2, 2)">saw</button>
+      <button onclick="selectWord(2, 3)">doesn't like</button>
+      <button onclick="selectWord(2, 4)">kissed</button>
+    </div>
+    <div class="column" id="col3">
+      <button onclick="selectWord(3, 0)">a funny</button>
+      <button onclick="selectWord(3, 1)">a scary</button>
+      <button onclick="selectWord(3, 2)">a gooey</button>
+      <button onclick="selectWord(3, 3)">a slimy</button>
+      <button onclick="selectWord(3, 4)">a barking</button>
+      <button onclick="selectWord(3, 5)">a fat</button>
+    </div>
+    <div class="column" id="col4">
+      <button onclick="selectWord(4, 0)">goat</button>
+      <button onclick="selectWord(4, 1)">monkey</button>
+      <button onclick="selectWord(4, 2)">cow</button>
+      <button onclick="selectWord(4, 3)">frog</button>
+      <button onclick="selectWord(4, 4)">bug</button>
+      <button onclick="selectWord(4, 5)">worm</button>
+    </div>
+    <div class="column" id="col5">
+      <button onclick="selectWord(5, 0)">on the moon</button>
+      <button onclick="selectWord(5, 1)">on the chair</button>
+      <button onclick="selectWord(5, 2)">in my spaghetti</button>
+      <button onclick="selectWord(5, 3)">in my soup</button>
+      <button onclick="selectWord(5, 4)">on the grass</button>
+      <button onclick="selectWord(5, 5)">in my shoes</button>
+    </div>
+  </div>
+
+  <div class="output-section">
+    <button onclick="buildStory()">Tell Story</button>
+    <p id="story-output">Your story will appear here.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
